@@ -1,4 +1,4 @@
-options symbolgen mprint mlogic;
+ï»¿options symbolgen mprint mlogic;
 
 %macro M_Greeacres_Method;
 
@@ -6,7 +6,7 @@ options symbolgen mprint mlogic;
 %let inputs=%EM_NOMINAL_INPUT;
 %let act=;
 %LET ii=1;
-%do %WHILE(%SCAN(inputs,&ii,' ') NE );
+%do %WHILE(%SCAN(&inputs,&ii,' ') NE );
 	%let input=%upcase(%scan(&inputs,&ii));
 
 	/*-----------------------------------------------------------------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ options symbolgen mprint mlogic;
 	RUN;
 	/*------------------------------------------------------------------------------
 	  --- 	Step 10: Utiliza Hash para adicionar el nuevo campo con el valor del
-			cluster del código postal en la partición de entrenamiento
+			cluster del cï¿½digo postal en la particiï¿½n de entrenamiento
 	------------------------------------------------------------------------------*/
 	/*-----------------------------------------------------------------------------------------------------------------------------------------
 	  --- 	*********************************************************************************************************************************
