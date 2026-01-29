@@ -1,7 +1,5 @@
 DATA ABT (DROP=_F _RC)  ;
 
-	 IF 0 THEN 	SET INPUT_TABLE;
-
      DCL HASH HH (HASHEXP: 16, ORDERED: 'A');
      DCL HITER HI ('HH');
      HH.DEFINEKEY ('SUBJECT_ID');
@@ -34,4 +32,5 @@ DATA ABT (DROP=_F _RC)  ;
 
 STOP;
 RUN;
+
 
